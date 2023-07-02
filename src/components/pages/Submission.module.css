@@ -1,0 +1,20 @@
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+}
+
+main h2 {
+  margin-top: 25px;
+}
+
+mmain .subSection {
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  main h2 {
+    padding: 0 25px;
+  }
+}
