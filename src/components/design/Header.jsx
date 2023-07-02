@@ -9,8 +9,8 @@ const Header = (props) => {
       </div>
       <nav>
         <ul>
-          <li><Link to={"/home"}>الصفحة الرئيسية</Link></li>
-          <li>التقديم</li>
+          <li><Link to={"/"}>الصفحة الرئيسية</Link></li>
+          <li><Link to={"/submission"}>التقديم</Link></li>
           <li>مراحل المدرسة</li>
           <li>للتواصل معنا</li>
         </ul>

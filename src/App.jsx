@@ -1,9 +1,10 @@
-import { Fragment, useEffect, useReducer } from "react";
+import { Fragment, useEffect } from "react";
 import { Route, Routes, useNavigate } from "react-router-dom";
 
 import Header from "./components/design/Header";
 import Home from "./components/pages/Home";
 import NotFound from "./components/design/NotFound";
+import Submission from "./components/pages/Submission";
 
 function App() {
   const navigate = useNavigate();
@@ -11,14 +12,8 @@ function App() {
     <Fragment>
       <Header />
       <Routes>
-        <Route path="/" exact>
-          {
-            useEffect(() => (
-              navigate("/home")
-              ), [navigate])
-          }
-        </Route>
-        <Route path="/home" exact element={<Home />} />
+        <Route path="/" exact element={<Home />} />
+        <Route path="/submission" exact element={<Submission />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </Fragment>

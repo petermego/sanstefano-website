@@ -1,0 +1,31 @@
+.landing {
+  width: 100%;
+  height: calc(100vh - 165px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.landing .submission {
+  background-color: #d10f4c;
+  height: 20rem;
+  width: 25rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.landing .submission h2 {
+  color: #fff;
+}
+
+.landing .submission a {
+  cursor: pointer;
+  background-color: #11111f;
+  width: 10rem;
+  padding: 5px 0;
+  margin-top: 20px;
+  text-align: center;
+  color: #fff;
+}
