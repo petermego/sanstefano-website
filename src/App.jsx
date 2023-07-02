@@ -6,10 +6,18 @@ import Home from "./components/pages/Home";
 import NotFound from "./components/design/NotFound";
 
 function App() {
+  const navigate = useNavigate();
   return (
     <Fragment>
       <Header />
       <Routes>
+        <Route path="/" exact>
+          {
+            useEffect(() => (
+              navigate("/home")
+              ), [navigate])
+          }
+        </Route>
         <Route path="/home" exact element={<Home />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
