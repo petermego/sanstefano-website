@@ -8,6 +8,7 @@ import Submission from "./components/pages/Submission";
 
 function App() {
   const navigate = useNavigate();
+  
   return (
     <Fragment>
       <Header />

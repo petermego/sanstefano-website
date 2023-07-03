@@ -4,20 +4,39 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  background: url(../../../assets/IMG-20210502-WA0010.jpg), linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  background-size: cover;
+  background-position: center;
+  backdrop-filter: blur(5px);
+}
+.landing::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
 }
 
 .landing .submission {
   background-color: #d10f4c;
-  height: 20rem;
-  width: 25rem;
+  height: 22rem;
+  width: 35rem;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  z-index: 5;
 }
 
 .landing .submission h2 {
+  font-size: 2.2rem;
   color: #fff;
+}
+
+.landing .submission p {
+  font-size: 1.8rem;
 }
 
 .landing .submission a {
@@ -28,4 +47,41 @@
   margin-top: 20px;
   text-align: center;
   color: #fff;
+}
+
+.description {
+  margin-top: 2.8rem;
+  text-align: center;
+  margin-bottom: 2.8rem;
+}
+
+.description h1 {
+  font-size: 3rem;
+  margin-bottom: 30px;
+}
+
+.description p {
+  font-size: 2rem;
+}
+
+@media (max-width:480px) {
+  .landing {
+    height: calc(60vh - 165px);
+  }
+
+  .landing .submission h2 {
+    font-size: 1.6rem;
+  }
+
+  .landing .submission p {
+    font-size: 1.2rem;
+  }
+
+  .description h1 {
+    font-size: 2rem;
+  }
+  
+  .description p {
+    font-size: 1.4rem;
+  }
 }
