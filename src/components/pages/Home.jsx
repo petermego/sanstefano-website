@@ -21,6 +21,13 @@ const Home = () => {
         <h1>مدرسة و دياكونية سان ستيفانو للشمامسة</h1>
         <p>خدمة مدرسة الشمامسة بكنيسة العذراء مريم و الملاك ميخائيل و تشمل الحان و لغة قبطية و كتاب مقدس و عقيدة و طقس و محفوظات</p>
       </article>
+      <section className={styles.stage}>
+        <img className={styles.box} src={require("../../assets/img1.jpg")} alt="صورة للخدام" />
+        <aside className={styles.box}>
+          <h2>المراحل الدراسية</h2>
+          <Link to={"/stages"}>تعرف علي مراحل المدرسة</Link>
+        </aside>
+      </section>
     </main>
   );
 }

@@ -6,7 +6,7 @@ import Home from "./components/pages/Home";
 import NotFound from "./components/design/NotFound";
 import Submission from "./components/pages/Submission";
 
-function App() {
+const App = () => {
   const navigate = useNavigate();
   
   return (

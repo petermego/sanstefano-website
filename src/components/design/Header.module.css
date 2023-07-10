@@ -2,6 +2,7 @@ header {
   display: flex;
   flex-direction: column;
   width: 100%;
+  z-index: 200;
 }
 
 header .media {
@@ -22,6 +23,7 @@ nav {
   background-color: #11111f;
   color: #fff;
   height: 45px;
+  z-index: 200;
 }
 
 nav ul {
@@ -48,7 +50,7 @@ nav ul li:active {
 
 @media (max-width:480px) {
   nav {
-    height: auto;
+    height: fit-content;
   }
 
   nav ul {
