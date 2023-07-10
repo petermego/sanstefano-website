@@ -6,11 +6,32 @@ main {
 }
 
 main h2 {
-  margin-top: 25px;
+  padding-top: 25px;
 }
 
-mmain .subSection {
+.subSection {
   width: 100%;
+}
+
+.subSection form {
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.subSection form input {
+  outline: none;
+  margin: 15px 0;
+}
+
+.subSection form input[type="submit"] {
+  background-color: #d10f4c;
+  color: #fff;
+  width: 8rem;
+  padding: 5px 0;
 }
 
 @media (max-width: 768px) {
