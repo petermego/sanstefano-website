@@ -1,3 +1,5 @@
+import React from 'react';
+
 import styles from "./Submission.module.css";
 
 const Submission = () => {
@@ -26,4 +28,4 @@ const Submission = () => {
   );
 }
  
-export default Submission;
+export default React.memo(Submission);
