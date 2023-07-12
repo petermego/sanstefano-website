@@ -54,6 +54,11 @@ main h2 {
     background-color: rgb(237, 237, 237);
   }
 
+  .subSection form label {
+    font-size: 1.2rem;
+  }
+
+
   .subSection form input {
     width: 95%;
   }
