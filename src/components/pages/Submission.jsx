@@ -14,6 +14,8 @@ const Submission = () => {
           <input type="email" id="email" name="email" required />
           <label htmlFor="password">كلمة مرور</label>
           <input type="password" id="password" name="password" required />
+          <label htmlFor="password">رقم تسجيل الاستمارة</label>
+          <input type="number" id="form" name="form" required />
           <label htmlFor="phone">رقم هاتف مسجل علي واتساب</label>
           <input type="tel" id="phone" name="phoneNumber" required />
           <label htmlFor="address">العنوان</label>

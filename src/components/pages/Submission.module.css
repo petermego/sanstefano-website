@@ -23,8 +23,17 @@ main h2 {
 }
 
 .subSection form input {
-  outline: none;
   margin: 15px 0;
+  padding: 5px 15px;
+  width: 18rem;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+
+.subSection form input:focus  {
+  outline: #d10f4c solid 2px;
+  border: none;
+  transition: 70ms;
 }
 
 .subSection form input[type="submit"] {
@@ -37,5 +46,15 @@ main h2 {
 @media (max-width: 768px) {
   main h2 {
     padding: 0 25px;
+  }
+}
+
+@media (max-width: 480px) {
+  .subSection form {
+    background-color: rgb(237, 237, 237);
+  }
+
+  .subSection form input {
+    width: 95%;
   }
 }
