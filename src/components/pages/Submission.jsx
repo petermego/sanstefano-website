@@ -5,9 +5,9 @@ import styles from "./Submission.module.css";
 
 const validate = values => {
   const errors = {};
-  if (!values.username) {
+  if (!values.username || values.username.trim() === '') {
     errors.username = 'مطلوب';
-  } else if (values.username.length < 15) {
+  } else if (values.username.trim().length < 15) {
     errors.username = 'يجب ان يكون الاسم لا يقل عن 15 حرف';
   }
 
@@ -27,7 +27,7 @@ const validate = values => {
     errors.formno = 'مطلوب';
   }
 
-  if (!values.phone) {
+  if (!values.phone || values.phone.trim() === '') {
     errors.phone = 'مطلوب';
   }
 
